@@ -9,14 +9,14 @@ public class Palindrom {
         scan.close();
 
         int start = 0, end = string.length()-1;
-        boolean sonuc = true;
+        boolean result = true;
         do {
-            if (string.charAt(start) != string.charAt(end)) sonuc = false;
+            if (string.charAt(start) != string.charAt(end)) result = false;
             start++;
             end--;
         } while (start <= end);
 
-        String res = sonuc ? "Palindrom!" : "Not Palindrom !";
+        String res = result ? "Palindrom!" : "Not Palindrom !";
         System.out.println(res);
     }
 }
